@@ -13,4 +13,9 @@
     <string name="txt_passwd">비밀번호를 입력하세요</string>
     <string name="btn_login">Login</string>
     <string name="newuser">새로 오셨다면?</string>
+    <string name="app_name2">로그인</string>
+    <string name="app_name3">아이디 비밀번호 찾기</string>
+    <string name="login">Login</string>
+    <string name="fullname">Full name</string>
+    <string name="phonenumber">Phone number</string>
 </resources>

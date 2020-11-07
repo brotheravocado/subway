@@ -19,6 +19,16 @@
         </activity>
         <activity android:name=".RegisterActivity">
         </activity>
+        <activity
+            android:name=".Find"
+            android:label="@string/app_name3">
+        </activity>
+        <activity
+            android:name=".Find_id">
+        </activity>
+        <activity
+            android:name=".FirstMain">
+        </activity>
     </application>
 
 </manifest>
