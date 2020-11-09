@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         >
-        <activity android:name=".MainActivity">
+        <activity android:name=".FirstMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +27,7 @@
             android:name=".Find_id">
         </activity>
         <activity
-            android:name=".FirstMain">
+            android:name=".Login">
         </activity>
     </application>
 

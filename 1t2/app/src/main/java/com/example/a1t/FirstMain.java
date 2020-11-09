@@ -1,4 +1,4 @@
-package com.example.mobile_subway;
+package com.example.a1t;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +12,7 @@ public class FirstMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.FirstMain);
+        setContentView(R.layout.firstmain);
     }
     public void displayLogin(View v){
 

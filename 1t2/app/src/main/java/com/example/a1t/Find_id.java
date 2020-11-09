@@ -1,7 +1,7 @@
 // 아이디 찾기 윤지 파일
 
 
-package com.example.mobile_subway;
+package com.example.a1t;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.content.Intent;
@@ -19,7 +19,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageButton;
 
-import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.regex.Pattern;
 

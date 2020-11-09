@@ -1,7 +1,7 @@
 
 
 // 윤지 아이디 비번 찾기 첫 화면
-package com.example.mobile_subway;
+package com.example.a1t;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
