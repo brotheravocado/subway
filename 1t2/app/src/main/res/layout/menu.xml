@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--이혜주 : 즐겨찾기 화면 및 메뉴 화면 구성 설계-->
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Menu">
+
+    <!--배경이 될 Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal">
+
+
+        <!--
+        <Button
+            android:layout_marginTop="100dp"
+            android:id="@+id/btn_OpenDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="드로어 열기" />
+        -->
+
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="기본 배경이 될 화면"
+            android:textColor="#f33"
+            android:textSize="24dp" />
+         -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/favorties" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:padding="0dp"
+                android:id="@+id/hamburger"
+                android:background="@drawable/hamburger" />
+
+            <EditText
+                android:id="@+id/stationsearch"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/stationsearch"
+                android:drawableLeft="@drawable/dodbogi"
+                android:hint="@string/hint_id"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:visibility="visible" />
+            <!--android:background="@color/colorPrimary"-->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/home" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="150dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/circle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="150dp"
+            android:textSize="20sp"
+            android:text="@string/favorite" />
+
+
+    </RelativeLayout>
+
+    <!--드로어 화면이 될 Layout-->
+    <RelativeLayout
+        android:id="@+id/drawer"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_gravity="start">
+
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="드로어가 될 화면"
+            android:textColor="#f70"
+            android:textSize="24dp" />
+        -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/triangle"
+                android:background="@drawable/triangle" />
+
+
+            <!--
+            <ImageView
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/triangle" />
+             -->
+
+            <ImageButton
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/stationbus"
+                android:background="@drawable/stationbus" />
+
+            <!--
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stationbus"
+                android:adjustViewBounds="true" />
+            -->
+
+            <ImageButton
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/subwayline"
+                android:background="@drawable/subwayline" />
+
+            <!--
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/subwayline" />
+            -->
+
+
+            <ImageButton
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/arrivealarm"
+                android:background="@drawable/arrivealarm" />
+
+            <!--
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrivealarm"
+                android:adjustViewBounds="true" />
+
+                -->
+
+            <ImageButton
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/alarm"
+                android:background="@drawable/alarm" />
+
+            <!--
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/alarm" />
+             -->
+
+            <ImageButton
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/star"
+                android:background="@drawable/star" />
+
+            <ImageButton
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/setting"
+                android:background="@drawable/setting" />
+            <!--
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:adjustViewBounds="true" />
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/setting" />
+            -->
+
+
+        </LinearLayout>
+
+        <!--
+        <Button
+            android:id="@+id/btn_CloseDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="드로어 닫기" />
+        -->
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
