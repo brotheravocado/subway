@@ -1,4 +1,4 @@
-package com.example.slidingmenu;
+package com.example.a1t;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 //이혜주 : 알람 목록
 public class Arrivealarm extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class Arrivealarm extends AppCompatActivity {
 
 
         ImageButton before = (ImageButton) findViewById(R.id.before);
-        before.setOnClickListener(new View.OnClickListener() {
+        before.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(getApplicationContext(), Menu.class);

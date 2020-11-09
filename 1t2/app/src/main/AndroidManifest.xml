@@ -29,6 +29,12 @@
         <activity
             android:name=".Login">
         </activity>
+        <activity
+            android:name=".Arrivealarm">
+        </activity>
+        <activity
+            android:name=".Menu">
+        </activity>
     </application>
 
 </manifest>

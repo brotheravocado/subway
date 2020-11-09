@@ -1,21 +1,20 @@
-package com.example.slidingmenu;
+package com.example.a1t;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-import android.content.Intent;
+
 //이혜주 : 즐겨찾기 화면 및 슬라이딩 화면
 public class Menu extends AppCompatActivity implements OnEditorActionListener {
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +33,7 @@ public class Menu extends AppCompatActivity implements OnEditorActionListener {
         ImageButton triangle = (ImageButton) findViewById(R.id.triangle);
         ImageButton hamburger = (ImageButton) findViewById(R.id.hamburger);
         final ImageButton arrivealarm = (ImageButton) findViewById(R.id.arrivealarm);
-        stationsearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        stationsearch.setOnEditorActionListener(new OnEditorActionListener() {
 
             // TODO : keypad 에서 enter 실행시 Listen하고 동작할 액션을 작성
 

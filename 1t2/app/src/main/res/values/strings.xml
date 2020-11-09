@@ -18,4 +18,7 @@
     <string name="login">Login</string>
     <string name="fullname">Full name</string>
     <string name="phonenumber">Phone number</string>
+    <string name="hint2_id">역 이름을 검색하세요</string>
+    <string name="favorite">님의 즐겨찾기</string>
+    <string name="alarmlist">도착 알림 목록</string>
 </resources>
