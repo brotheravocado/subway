@@ -63,10 +63,10 @@ public class Find_id extends AppCompatActivity{
         {
 
             if (Pattern.matches("^[a-zA-Z]*$",s)){
-                    countname = 1;
+                countname = 1;
             }
             else{
-                    countname = 0;
+                countname = 0;
 
             }
             showbutton();
@@ -90,13 +90,13 @@ public class Find_id extends AppCompatActivity{
         public void afterTextChanged(Editable s)
         {
 
-        if (Pattern.matches("^01(?:0|1|[6-9])(?:\\d{3}|\\d{4})\\d{4}$",s)){
+            if (Pattern.matches("^01(?:0|1|[6-9])(?:\\d{3}|\\d{4})\\d{4}$",s)){
                 countphone =1;
             }
-        else{
-            countphone = 0;
-        }
-        showbutton();
+            else{
+                countphone = 0;
+            }
+            showbutton();
 
         }
 

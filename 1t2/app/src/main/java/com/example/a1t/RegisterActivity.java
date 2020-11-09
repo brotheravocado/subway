@@ -1,10 +1,10 @@
 package com.example.a1t;
 
-        import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
-        import android.os.Bundle;
-        import android.view.View;
-        import android.widget.Button;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class RegisterActivity extends AppCompatActivity {
 
